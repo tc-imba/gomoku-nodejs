@@ -1,4 +1,5 @@
-const readline = require('readline');
+import readline from 'readline';
+import openings from '../openings/openings';
 
 const BOARD_SIZE = 15;
 const EMPTY = 0;

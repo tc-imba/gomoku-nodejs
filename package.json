@@ -5,23 +5,29 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-babel": "^5.0.0",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^4.0.2",
-    "gulp-file-cache": "^0.0.1",
-    "gulp-plumber": "^1.2.0"
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
   },
   "scripts": {
-    "build": "gulp"
+    "openings": "node openings/generate.js",
+    "build": "webpack -p"
   },
   "babel": {
     "presets": [
       "env",
       "stage-0"
+    ],
+    "plugins": [
+      "transform-runtime",
+      "transform-es2015-classes"
     ]
   }
 }
