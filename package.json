@@ -1,0 +1,27 @@
+{
+  "name": "gomoku-nodejs",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-plugin-babel": "^5.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-file-cache": "^0.0.1",
+    "gulp-plumber": "^1.2.0"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  }
+}
